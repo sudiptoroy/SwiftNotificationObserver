@@ -12,6 +12,9 @@ class TextViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     
+    // dictionary for sending data
+    var dataToSend = ["name" : ""] as [String : String]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +23,8 @@ class TextViewController: UIViewController {
     
     @IBAction func submitButtonTapped(_ sender: Any) {
         let name = Notification.Name(rawValue: textSubmitNotification)
-        NotificationCenter.default.post(name: name, object: nil)
+        dataToSend["name"] = textField.text
+        NotificationCenter.default.post(name: name, object: dataToSend)
         dismiss(animated: true, completion: nil)
     }
     

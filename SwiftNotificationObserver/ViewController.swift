@@ -32,15 +32,21 @@ class ViewController: UIViewController {
         present(TextVC, animated: true, completion: nil)
     }
     
-    
+    // function for creating observer
     func createObservers () {
         // textSubmitted observer
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.updateTextLabel(notification:)), name: text, object: nil)
     }
     
+    // Show Text in texLabel
     @objc func updateTextLabel (notification: NSNotification) {
         let isText = notification.name == text
-        print("Notification Called")
+        if isText {
+            let getText = notification.object
+            print(getText as! Dictionary<String, String>)
+            let showText = getText as! Dictionary<String, String>
+            textLabel.text = showText["name"]
+        }
     }
 }
 
