@@ -13,6 +13,7 @@
 		484E706823E9720B007C8D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484E706723E9720B007C8D92 /* Assets.xcassets */; };
 		484E706B23E9720B007C8D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484E706923E9720B007C8D92 /* LaunchScreen.storyboard */; };
 		484E707623E9720B007C8D92 /* SwiftNotificationObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E707523E9720B007C8D92 /* SwiftNotificationObserverTests.swift */; };
+		484E708123E97438007C8D92 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E708023E97438007C8D92 /* TextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		484E707123E9720B007C8D92 /* SwiftNotificationObserverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNotificationObserverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484E707523E9720B007C8D92 /* SwiftNotificationObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNotificationObserverTests.swift; sourceTree = "<group>"; };
 		484E707723E9720B007C8D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484E708023E97438007C8D92 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				484E706023E97205007C8D92 /* AppDelegate.swift */,
 				484E706223E97205007C8D92 /* ViewController.swift */,
+				484E708023E97438007C8D92 /* TextViewController.swift */,
 				484E706423E97205007C8D92 /* Main.storyboard */,
 				484E706723E9720B007C8D92 /* Assets.xcassets */,
 				484E706923E9720B007C8D92 /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 			files = (
 				484E706323E97205007C8D92 /* ViewController.swift in Sources */,
 				484E706123E97205007C8D92 /* AppDelegate.swift in Sources */,
+				484E708123E97438007C8D92 /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
