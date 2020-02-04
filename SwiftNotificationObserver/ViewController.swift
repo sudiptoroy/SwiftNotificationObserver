@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func submitButtonTapped(_ sender: Any) {
-        
+        let TextVC = storyboard?.instantiateViewController(withIdentifier: "textViewController") as! TextViewController
+        present(TextVC, animated: true, completion: nil)
     }
     
 }

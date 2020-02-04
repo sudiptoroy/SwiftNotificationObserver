@@ -75,6 +75,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="IQR-Vf-MVG" eventType="touchUpInside" id="ta1-ys-uvm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,6 +93,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IQs-tz-lpc"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="xdv-7y-t79" id="aS9-kq-zmk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k63-hz-lyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
