@@ -19,6 +19,8 @@ class TextViewController: UIViewController {
     }
     
     @IBAction func submitButtonTapped(_ sender: Any) {
+        let name = Notification.Name(rawValue: textSubmitNotification)
+        NotificationCenter.default.post(name: name, object: nil)
         dismiss(animated: true, completion: nil)
     }
     
